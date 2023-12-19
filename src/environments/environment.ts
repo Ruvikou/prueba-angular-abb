@@ -3,7 +3,15 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  dropdown_options: [
+    'Custom Dropdown test',
+    'Second Dropdown option',
+    'Third Dropdown option',
+    'Another one',
+    'But not less important',
+    'The latest option in the dropdown'
+  ]
 };
 
 /*

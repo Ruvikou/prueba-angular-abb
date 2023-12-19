@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { environment } from 'src/environments/environment';
 
 @Component({
   selector: 'app-home',
@@ -6,14 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
-  public dropdownOptions: string[] = [
-    'Custom Dropdown test',
-    'Second Dropdown option',
-    'Third Dropdown option',
-    'Another one',
-    'But not less important',
-    'The latest option in the dropdown'
-  ]
+  public dropdownOptions: string[] = environment.dropdown_options;
+  
   // The first option is selected by default
   public selectedOption: string = this.dropdownOptions[0];
 
