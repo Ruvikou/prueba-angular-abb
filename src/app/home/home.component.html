@@ -2,14 +2,16 @@
     <h2 class="section__h2">Custom Dropdown</h2>
 
     <div class="section__dropdown">
+        <!-- Custom dropdown component -->
         <app-custom-dropdown [options]="dropdownOptions" [selectedOption]="selectedOption" (selectedOptionChange)="setSelectedOption($event)"></app-custom-dropdown>
 
+        <!-- Label for the selected option -->
         <p><label class="section__dropdown-label">Selected: {{ selectedOption }}</label></p>
-        <!-- <p><label for="custom-dropdown">Selected: {{ selectedOption }}</label></p> -->
     </div>
 
     <hr class="section__hr--vertical">
 
+    <!-- Right part of the section -->
     <div class="section__span">
         <span>This is a design example!!!!!</span>
     </div>

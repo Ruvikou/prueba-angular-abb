@@ -14,7 +14,7 @@ export class HomeComponent implements OnInit {
     'But not less important',
     'The latest option in the dropdown'
   ]
-
+  // The first option is selected by default
   public selectedOption: string = this.dropdownOptions[0];
 
   constructor() { }
@@ -22,6 +22,7 @@ export class HomeComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // Updates the selected option when changed and emitted
   setSelectedOption($event: string) {
     this.selectedOption = $event;
   }

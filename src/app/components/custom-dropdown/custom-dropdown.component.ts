@@ -16,6 +16,7 @@ export class CustomDropdownComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  // Updates the selected option, and tells the parent component
   setOption(option: string) {
     this.selectedOption = option;
     this.selectedOptionChange.emit(option);
