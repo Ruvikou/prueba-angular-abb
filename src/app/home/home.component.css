@@ -1,0 +1,42 @@
+section {
+    position: absolute;
+    min-width: max-content;
+    width: 60%;
+    top: 10rem;
+    left: 20%;
+    background-color: white;
+    border-radius: 4px;
+    padding: .5rem 1rem;
+    margin: auto;
+}
+
+.section__h2 {
+    color: #1F1F1F;
+    font-size: 20px;
+}
+
+.section__dropdown {
+    float: left;
+    color: #1F1F1F;
+    font-size: 14px;
+    width: 50%;
+}
+
+.section__dropdown-label {
+    font-weight: bold;
+}
+
+.section__hr--vertical {
+    height: 5rem;
+    width: .5px;
+    float: left;
+    border-width: 0;
+    color: #DBDBDB;
+    background-color: #DBDBDB;
+    margin: 0 2rem;
+}
+
+.section__span {
+    color: #686868;
+    font-size: 16px;
+}
