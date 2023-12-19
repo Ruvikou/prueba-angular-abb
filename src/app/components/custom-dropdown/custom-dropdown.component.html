@@ -1,0 +1,11 @@
+<div class="dropdown" [ngClass]="{active: selecting}" (click)="selecting = !selecting">
+    <i class="dropdown__input-icon"></i>
+    <input type="text" [value]="selectedOption" class="dropdown__input" readonly />
+    <div class="dropdown__content">
+        <span *ngFor="let option of options" (click)="setOption(option)" class="dropdown__option"
+            [ngClass]="{selected: option === selectedOption}">
+            {{ option }}
+            <i class="dropdown__option-icon"></i>
+        </span>
+    </div>
+</div>

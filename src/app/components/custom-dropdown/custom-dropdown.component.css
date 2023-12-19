@@ -1,0 +1,67 @@
+.dropdown {
+    position: relative;
+}
+
+.dropdown__input {
+    border: 2px solid #DBDBDB;
+    border-radius: 4px;
+    color: #1F1F1F;
+    font-size: 14px;
+    font-family: ABBvoice;
+    width: 90%;
+    padding: .45rem .7rem;
+    cursor: pointer;
+}
+
+.dropdown__input:focus {
+    border-color: #3366FF;
+    outline: 0;
+}
+
+.dropdown__input-icon {
+    background: url('../../../assets/chevron.svg');
+    width: 16px;
+    height: 10px;
+    position: absolute;
+    top: 35%;
+    left: 90%;
+    transform: rotate(180deg);
+    fill: #333333;
+}
+
+.dropdown.active .dropdown__input-icon {
+    transform: rotate(0deg);
+}
+
+.dropdown__content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 98%;
+    min-width: max-content;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+}
+
+.dropdown.active .dropdown__content {
+    display: grid;
+}
+
+.dropdown__option {
+    padding: .5rem 1rem;
+    border-radius: 4px;
+}
+
+.dropdown__option.selected {
+    background-color: #3366FF;
+}
+
+.dropdown__option-icon {
+    background: url('../../../assets/check.svg');
+    width: 16px;
+    height: 12px;
+    position: absolute;
+    left: 90%;
+    fill: #333333;
+}
