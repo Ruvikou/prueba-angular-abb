@@ -1,0 +1,14 @@
+header {
+    position: absolute;
+    padding-top: 1rem;
+    padding-left: 25%;
+    z-index: -1;
+}
+
+.header__h1--hidden {
+    visibility: hidden;
+}
+
+.header__img {
+    max-width: 95%;
+}
