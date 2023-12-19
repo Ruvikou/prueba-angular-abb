@@ -1,0 +1,10 @@
+{
+  "defaultProject": "prueba-angular-abb",
+  "projects": {
+    "prueba-angular-abb": {
+      "name": "prueba-angular-abb",
+      "integrations": {},
+      "type": "angular"
+    }
+  }
+}
